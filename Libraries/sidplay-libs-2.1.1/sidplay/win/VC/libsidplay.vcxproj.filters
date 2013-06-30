@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Components">
+      <UniqueIdentifier>{d43d6ba9-d55d-4f34-bd3d-7ce22f696768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\MOS6510">
+      <UniqueIdentifier>{1b865b6d-3476-4e2d-b39f-121e028d1215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\MOS6526">
+      <UniqueIdentifier>{ef535096-ceb7-42ad-9420-2f99bb629ff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\MOS656X">
+      <UniqueIdentifier>{d58d59d2-8c26-43a8-8b11-c1f93bb562c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\SID6526">
+      <UniqueIdentifier>{92e764f4-ab55-44c3-ba4c-ff03082355ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\SidTune">
+      <UniqueIdentifier>{061fce81-28cb-49f5-ba35-0863c17ebfef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\xSID">
+      <UniqueIdentifier>{b29e9c52-b419-4e1c-b398-3e7a2e72c379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5bfcca17-382d-4065-b91a-6e06eca45c6f}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files %28Public%29">
+      <UniqueIdentifier>{d0b8f621-d478-431e-a875-30d9c1d1822f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8e51410a-1abd-4958-90d7-2ec3986b4e6d}</UniqueIdentifier>
+      <Extensions>cpp;cc;cxx;c;i</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\mos6510\conf6510.h">
+      <Filter>Components\MOS6510</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mos6510\mos6510.h">
+      <Filter>Components\MOS6510</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mos6510\cycle_based\mos6510c.h">
+      <Filter>Components\MOS6510</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mos6510\opcodes.h">
+      <Filter>Components\MOS6510</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mos6510\cycle_based\sid6510c.h">
+      <Filter>Components\MOS6510</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mos6526\mos6526.h">
+      <Filter>Components\MOS6526</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mos656x\mos656x.h">
+      <Filter>Components\MOS656X</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sid6526\sid6526.h">
+      <Filter>Components\SID6526</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\Buffer.h">
+      <Filter>Components\SidTune</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sidtune\PP20.h">
+      <Filter>Components\SidTune</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sidtune\PP20_Defs.h">
+      <Filter>Components\SidTune</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\SidTune.h">
+      <Filter>Components\SidTune</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sidtune\SidTuneCfg.h">
+      <Filter>Components\SidTune</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sidtune\SidTuneTools.h">
+      <Filter>Components\SidTune</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\SmartPtr.h">
+      <Filter>Components\SidTune</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\xsid\xsid.h">
+      <Filter>Components\xSID</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\c64\c64cia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\c64\c64vic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\c64\c64xsid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nullsid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\sidconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\c64env.h">
+      <Filter>Header Files %28Public%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\component.h">
+      <Filter>Header Files %28Public%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\event.h">
+      <Filter>Header Files %28Public%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\sid2gui.h">
+      <Filter>Header Files %28Public%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\sid2types.h">
+      <Filter>Header Files %28Public%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\sidbuilder.h">
+      <Filter>Header Files %28Public%29</Filter>
+    </ClInclude>
+    <ClInclude Include="sidconfig.h">
+      <Filter>Header Files %28Public%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\sidendian.h">
+      <Filter>Header Files %28Public%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidenv.h">
+      <Filter>Header Files %28Public%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\sidplay.h">
+      <Filter>Header Files %28Public%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\sidplay2.h">
+      <Filter>Header Files %28Public%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\sidtypes.h">
+      <Filter>Header Files %28Public%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sidplay\sidusage.h">
+      <Filter>Header Files %28Public%29</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\mos6510\mos6510.cpp">
+      <Filter>Components\MOS6510</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mos6526\mos6526.cpp">
+      <Filter>Components\MOS6526</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mos656x\mos656x.cpp">
+      <Filter>Components\MOS656X</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sid6526\sid6526.cpp">
+      <Filter>Components\SID6526</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sidtune\IconInfo.cpp">
+      <Filter>Components\SidTune</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sidtune\InfoFile.cpp">
+      <Filter>Components\SidTune</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sidtune\MUS.cpp">
+      <Filter>Components\SidTune</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sidtune\p00.cpp">
+      <Filter>Components\SidTune</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sidtune\PP20.cpp">
+      <Filter>Components\SidTune</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sidtune\PRG.CPP">
+      <Filter>Components\SidTune</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sidtune\PSID.cpp">
+      <Filter>Components\SidTune</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sidtune\SidTune.cpp">
+      <Filter>Components\SidTune</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sidtune\SidTuneTools.cpp">
+      <Filter>Components\SidTune</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xsid\xsid.cpp">
+      <Filter>Components\xSID</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\event.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mixer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\psiddrv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\reloc65.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sidplay2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SidplayWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\mos6510\cycle_based\mos6510c.i">
+      <Filter>Components\MOS6510</Filter>
+    </None>
+    <None Include="..\..\src\mos6510\cycle_based\sid6510c.i">
+      <Filter>Components\MOS6510</Filter>
+    </None>
+    <None Include="..\..\src\char.bin">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\src\kernal.bin">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\src\poweron.bin">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\src\psiddrv.a65">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\src\psiddrv.bin">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

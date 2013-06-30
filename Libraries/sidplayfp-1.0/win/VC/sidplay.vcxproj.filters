@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Audio Drivers">
+      <UniqueIdentifier>{00a64200-0cac-4331-b557-07dbc1fa64ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Formats">
+      <UniqueIdentifier>{e88b5847-9de5-4a33-a389-be6f20bd3e09}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\audio\AudioBase.h">
+      <Filter>Audio Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\audio\AudioConfig.h">
+      <Filter>Audio Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\audio\AudioDrv.h">
+      <Filter>Audio Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\audio\oss\audiodrv.h">
+      <Filter>Audio Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\audio\alsa\audiodrv.h">
+      <Filter>Audio Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\audio\directx\directx.h">
+      <Filter>Audio Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\audio\mmsystem\mmsystem.h">
+      <Filter>Audio Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\audio\null\null.h">
+      <Filter>Audio Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\audio\wav\WavFile.h">
+      <Filter>Audio Formats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\audio\wav\WavFileDefs.h">
+      <Filter>Audio Formats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\config.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="..\..\src\IniConfig.h" />
+    <ClInclude Include="..\..\src\keyboard.h" />
+    <ClInclude Include="..\..\src\player.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\audio\directx\directx.cpp">
+      <Filter>Audio Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\audio\mmsystem\mmsystem.cpp">
+      <Filter>Audio Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\audio\null\null.cpp">
+      <Filter>Audio Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\audio\wav\WavFile.cpp">
+      <Filter>Audio Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\args.cpp" />
+    <ClCompile Include="..\..\src\IniConfig.cpp" />
+    <ClCompile Include="..\..\src\keyboard.cpp" />
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\menu.cpp" />
+    <ClCompile Include="..\..\src\player.cpp" />
+  </ItemGroup>
+</Project>

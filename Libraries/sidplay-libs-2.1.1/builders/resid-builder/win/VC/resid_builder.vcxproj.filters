@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ReSID 0.15">
+      <UniqueIdentifier>{c663dda7-4dc4-4f0b-aa9a-94fa1ddb9047}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\resid\envelope.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\extfilt.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\filter.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\pot.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\sid.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\version.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\voice.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\wave.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\wave6581__ST.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\wave6581_P_T.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\wave6581_PS_.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\wave6581_PST.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\wave8580__ST.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\wave8580_P_T.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\wave8580_PS_.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid\wave8580_PST.cpp">
+      <Filter>ReSID 0.15</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resid-builder.cpp" />
+    <ClCompile Include="..\..\src\resid.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\resid\envelope.h">
+      <Filter>ReSID 0.15</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\resid\extfilt.h">
+      <Filter>ReSID 0.15</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\resid\filter.h">
+      <Filter>ReSID 0.15</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\resid\pot.h">
+      <Filter>ReSID 0.15</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\resid\sid.h">
+      <Filter>ReSID 0.15</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\resid\siddefs.h">
+      <Filter>ReSID 0.15</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\resid\spline.h">
+      <Filter>ReSID 0.15</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\resid\voice.h">
+      <Filter>ReSID 0.15</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\resid\wave.h">
+      <Filter>ReSID 0.15</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="..\..\include\config.h" />
+    <ClInclude Include="..\..\src\resid-emu.h" />
+    <ClInclude Include="..\..\include\sidplay\builders\resid.h" />
+  </ItemGroup>
+</Project>
