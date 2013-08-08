@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 using NAudio.Wave;
@@ -12,6 +11,8 @@ namespace SidplaySharp
 	public sealed class SidReader : WaveStream
 	{
 		private readonly WaveFormat waveFormat;
+
+		#region Constructor
 
 		/// <summary>
 		/// Constructor.
@@ -48,24 +49,50 @@ namespace SidplaySharp
 			this.TuneTitle = tuneTitle;
 
 			//--- Tune Author --//
-			Array.Clear(buffer, 0, buffer.Length);
 			Marshal.Copy(SidplayNative.TuneAuthor(), buffer, 0, buffer.Length);
 			string tuneAuthor = Encoding.UTF8.GetString(buffer);
 			tuneAuthor = tuneAuthor.Trim((char) 0x00);
 			this.TuneAuthor = tuneAuthor;
 
 			//--- Tune Copyright ---//
-			Array.Clear(buffer, 0, buffer.Length);
 			Marshal.Copy(SidplayNative.TuneCopyright(), buffer, 0, buffer.Length);
 			string tuneCopyright = Encoding.UTF8.GetString(buffer);
 			tuneCopyright = tuneCopyright.Trim((char) 0x00);
 			this.TuneCopyright = tuneCopyright;
+
+			//--- Number of Subtunes ---//
+			this.NumberOfSubtunes = SidplayNative.NumberOfSubtunes();
 		}
+
+		/// <summary>
+		/// Destructor
+		/// </summary>
+		~SidReader()
+		{
+			SidplayNative.FreePlayer();
+		}
+
+		#endregion
+
+		#region Methods
 
 		public override int Read(byte[] buffer, int offset, int count)
 		{
 			return SidplayNative.GenerateSamples(buffer, count);
 		}
+
+		/// <summary>
+		/// Sets the subtune to play.
+		/// </summary>
+		/// <param name="tune">Subtune index.</param>
+		public void SetTune(int tune)
+		{
+			SidplayNative.SetTune(tune);
+		}
+
+		#endregion
+
+		#region Properties
 
 		public override WaveFormat WaveFormat
 		{
@@ -84,6 +111,8 @@ namespace SidplaySharp
 			get;
 			set;
 		}
+
+		#endregion
 
 		#region Info Properties
 
@@ -114,15 +143,23 @@ namespace SidplaySharp
 			private set;
 		}
 
-
-		#endregion
+		/// <summary>
+		/// The currently initialized song index.
+		/// </summary>
+		public int CurrentSong
+		{
+			get { return SidplayNative.CurrentSong(); }
+		}
 
 		/// <summary>
-		/// Destructor
+		/// The number of subtunes within the loaded SID file.
 		/// </summary>
-		~SidReader()
+		public int NumberOfSubtunes
 		{
-			SidplayNative.FreePlayer();
+			get;
+			private set;
 		}
+
+		#endregion
 	}
 }

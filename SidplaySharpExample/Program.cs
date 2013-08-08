@@ -9,9 +9,15 @@ namespace SidplaySharpExample
 	/// </summary>
 	internal class Program
 	{
-		private static int track = 0;
+		#region Fields
+
+		private static int track;
 		private static SidReader sid;
-		private static bool isPlaying = false;
+		private static bool isPlaying;
+
+		#endregion
+
+		#region Methods
 
 		internal static void Main(string[] args)
 		{
@@ -23,7 +29,7 @@ namespace SidplaySharpExample
 			player.Init(sid);
 
 			// Initialize track count
-			track = SidplayNative.CurrentSong();
+			track = sid.CurrentSong;
 
 			// Display the initial track information.
 			DisplayTrackInfo();
@@ -38,16 +44,16 @@ namespace SidplaySharpExample
 					if (track > 1)
 					{
 						track--;
-						SidplayNative.SetTune(track);
+						sid.SetTune(track);
 						DisplayTrackInfo();
 					}
 				}
 				else if (keyInfo.Key == ConsoleKey.RightArrow)
 				{
-					if (track != SidplayNative.NumberOfSubtunes())
+					if (track != sid.NumberOfSubtunes)
 					{
 						track++;
-						SidplayNative.SetTune(track);
+						sid.SetTune(track);
 						DisplayTrackInfo();
 					}
 				}
@@ -76,6 +82,7 @@ namespace SidplaySharpExample
 			Console.WriteLine("Copyright: " + sid.TuneCopyright);
 			Console.WriteLine();
 			Console.WriteLine("Current Track: " + track);
+			Console.WriteLine("Total Subtunes: " + sid.NumberOfSubtunes);
 			Console.WriteLine("-----------------------------------------");
 			Console.WriteLine("Controls: ");
 			Console.WriteLine();
@@ -83,5 +90,7 @@ namespace SidplaySharpExample
 			Console.WriteLine("Left/Right Arrow Keys : Next/Prev track (if present)");
 			Console.WriteLine("Enter/Escape          : Exit application");
 		}
+
+		#endregion
 	}
 }
